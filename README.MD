@@ -90,3 +90,7 @@ The project is structured into several header and source files, each serving a s
 - **BFSIterator.hpp**, **DFSIterator.hpp**, **InOrderIterator.hpp**, **PreOrderIterator.hpp**, **PostOrderIterator.hpp**: These files implement specific traversal strategies. Each one extends `BaseIterator` and implements the traversal logic according to the type (BFS, DFS, In-Order, Pre-Order, Post-Order).
 
 - **Complex.hpp**: Defines a `Complex` class for managing complex numbers, which demonstrates handling custom data types within the tree.
+
+- **demo.cpp**: to demonstrate the usege of each iterator and the trees structer.
+
+- **test.cpp**: provides varius testes that was done on  different types of graphs.
