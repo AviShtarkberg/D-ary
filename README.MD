@@ -64,7 +64,7 @@ for (auto it = tree_3.begin_dfs(); it != tree_3.end_dfs(); ++it)
     }
 ```
 
-To convert a binary tree to a heap tou should use:
+To convert a binary tree to a heap you should use:
 ```cpp
    vector<int> heap = b_tree.myHeap();
 ```
