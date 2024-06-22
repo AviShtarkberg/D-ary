@@ -75,7 +75,7 @@ This project utilizes several libraries, each chosen for specific functionality 
 
 - **SFML (Simple and Fast Multimedia Library)**: Used for graphical representation of the trees. SFML provides capabilities for window management, graphics, sound, and network. In this project, it is primarily used to draw nodes and edges of the tree visually on a window, which helps in understanding the structural relationships within the tree.
 
-- **Standard Template Library (STL)**: Utilized for its data structures and algorithms. Vectors, queues, stacks, and algorithms like `std::sort` and `std::make_heap` are used extensively to manage nodes during traversal and to facilitate operations like building heaps from tree elements.
+- **Standard Template Library (STL)**: Utilized for its data structures and algorithms. Vectors, queues, stacks, and algorithms like `std::sort` and `std::make_heap` are used extensively to manage nodes during traversal and to facilitate operations like building heaps from tree elements. Memory file was included to use his unique_ptr's to hendle the different iterators without the need to distruct them after thier use. 
 
 ## Project Files Overview
 
