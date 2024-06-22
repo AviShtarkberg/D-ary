@@ -13,7 +13,7 @@ This C++ project provides an implementation of various tree traversal algorithms
 - **Complex Data Type Support**: Capable of handling complex data types for node values, demonstrated with complex numbers.
 - **Error Handling**: Includes robust error handling for tree operations, such as avoiding cycles and enforcing child limits.
 
-## Runnig commands:**
+## Runnig commands:
    - To run the built-in demo which visualizes the tree structures and traversals:
    ```bash
    make tree
@@ -46,6 +46,27 @@ intTree.add_root(root);
 Node<int> child1(2), child2(3);
 intTree.add_sub_node(root, child1);
 intTree.add_sub_node(root, child2);
+```
+
+You can iterate the tree with pre/in/post order iterators like this:
+```cpp
+for (auto node = b_tree.begin_in_order(); *node != *b_tree.end_in_order(); ++(*node))
+    {
+        cout << (*node)->get_value() << " ";
+    }
+```
+
+Or using dfs/bfs iterators like this:
+```cpp
+for (auto it = tree_3.begin_dfs(); it != tree_3.end_dfs(); ++it)
+    {
+        std::cout << (*it)->get_value() << " ";
+    }
+```
+
+To convert a binary tree to a heap tou should use:
+```cpp
+   vector<int> heap = b_tree.myHeap();
 ```
 
 ## Libraries Used
