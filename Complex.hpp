@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cmath>
 
 using namespace std;
 
@@ -25,7 +26,7 @@ public:
 
     bool operator>(const Complex &other) const
     {
-        return _a > other._a; // or include imaginary part comparison if needed
+        return sqrt(pow(_a,2)+pow(_b,2)) > sqrt(pow(other._a,2)+pow(other._b,2)); 
     }
 
 private:
