@@ -77,7 +77,7 @@ TEST_CASE("Tree with complex")
 
     // will check the > operator as i dicided it to work
     CHECK(!(a > b));
-    CHECK(a > c);
+    CHECK(b > a);
 }
 
 TEST_CASE("Binary tree iterators")
