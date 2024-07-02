@@ -13,7 +13,7 @@ This C++ project provides an implementation of various tree traversal algorithms
 - **Complex Data Type Support**: Capable of handling complex data types for node values, demonstrated with complex numbers.
 - **Error Handling**: Includes robust error handling for tree operations, such as avoiding cycles and enforcing child limits.
 
-## Runnig commands:
+## Runnig commands:**
    - To run the built-in demo which visualizes the tree structures and traversals:
    ```bash
    make tree
@@ -48,34 +48,13 @@ intTree.add_sub_node(root, child1);
 intTree.add_sub_node(root, child2);
 ```
 
-You can iterate the tree with pre/in/post order iterators like this:
-```cpp
-for (auto node = b_tree.begin_in_order(); *node != *b_tree.end_in_order(); ++(*node))
-    {
-        cout << (*node)->get_value() << " ";
-    }
-```
-
-Or using dfs/bfs iterators like this:
-```cpp
-for (auto it = tree_3.begin_dfs(); it != tree_3.end_dfs(); ++it)
-    {
-        std::cout << (*it)->get_value() << " ";
-    }
-```
-
-To convert a binary tree to a heap you should use:
-```cpp
-   vector<int> heap = b_tree.myHeap();
-```
-
 ## Libraries Used
 
 This project utilizes several libraries, each chosen for specific functionality needed in the tree traversal and visualization tasks:
 
 - **SFML (Simple and Fast Multimedia Library)**: Used for graphical representation of the trees. SFML provides capabilities for window management, graphics, sound, and network. In this project, it is primarily used to draw nodes and edges of the tree visually on a window, which helps in understanding the structural relationships within the tree.
 
-- **Standard Template Library (STL)**: Utilized for its data structures and algorithms. Vectors, queues, stacks, and algorithms like `std::sort` and `std::make_heap` are used extensively to manage nodes during traversal and to facilitate operations like building heaps from tree elements. Memory file was included to use his unique_ptr's to hendle the different iterators without the need to distruct them after thier use. 
+- **Standard Template Library (STL)**: Utilized for its data structures and algorithms. Vectors, queues, stacks, and algorithms like `std::sort` and `std::make_heap` are used extensively to manage nodes during traversal and to facilitate operations like building heaps from tree elements.
 
 ## Project Files Overview
 
@@ -90,7 +69,3 @@ The project is structured into several header and source files, each serving a s
 - **BFSIterator.hpp**, **DFSIterator.hpp**, **InOrderIterator.hpp**, **PreOrderIterator.hpp**, **PostOrderIterator.hpp**: These files implement specific traversal strategies. Each one extends `BaseIterator` and implements the traversal logic according to the type (BFS, DFS, In-Order, Pre-Order, Post-Order).
 
 - **Complex.hpp**: Defines a `Complex` class for managing complex numbers, which demonstrates handling custom data types within the tree.
-
-- **demo.cpp**: to demonstrate the usege of each iterator and the trees structer.
-
-- **test.cpp**: provides varius testes that was done on  different types of graphs.

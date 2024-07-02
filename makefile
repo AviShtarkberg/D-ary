@@ -1,11 +1,9 @@
+#id:322530080 mail:avishb1213@gmail.com
 CXX=g++
 CXXFLAGS=-std=c++14 -g -Wall
 LSFMLFLAGS=-lsfml-graphics -lsfml-window -lsfml-system
-
-SD=Tree.hpp # You mentioned this, but .hpp files are not compiled, you might mean something else?
+SD=Tree.hpp
 ST=
-
-# Convert your .cpp file names to .o file names
 OD=$(SD:.cpp=.o)
 OT=$(ST:.cpp=.o)
 
